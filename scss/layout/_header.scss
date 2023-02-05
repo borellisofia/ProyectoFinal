@@ -1,0 +1,141 @@
+
+
+.inicio{
+    background-color: lightskyblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+}
+
+
+.logo{
+    display: flex;
+    width:80px ;
+    height:80px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    background-color: rgba(63, 113, 243, 0.76);
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    gap: 50px;
+}
+
+.navbar li{
+    list-style: none;
+    font-size: 25px;
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+}
+
+.texto{
+   margin: 0 auto;
+   margin-top: 100px;
+    font-size: 25px;
+    background-color:rgba(217, 217, 217, 0.795);
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    padding:20px;
+    color: black;
+}
+
+.boton{
+    width: 70px;
+    height: 30px;
+    background-color: rgba(63, 113, 243, 0.81);
+    color: white;
+    border-radius:4px;
+    border-style: none;
+    font-size: small;
+}
+
+a {
+  transition: background-color .5s;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: rgba(217, 217, 217, 0.481);
+}
+
+@media (max-width:1080px){
+    header{
+        color: white;
+        background-color: rgba(63, 113, 243, 0.76) ;
+        padding: 30px;
+    }
+    
+    .logo{
+        display: none;
+    }
+
+    .navbar{
+       flex-direction: row;
+       align-items: center;
+    }
+    .navbar li a {
+        color: white;
+    }
+
+    .texto{
+        margin: 0 auto;
+        margin-top: 100px;
+    
+    }
+
+
+}
+
+@media(max-width:960px){
+    header{
+        background-color:  rgba(63, 113, 243, 0.76);
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        
+    }
+  .navbar{
+    display:block;
+    justify-content: center;
+    
+  }
+
+  .texto{
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 15px;
+  }
+
+}
+
+@media(max-width:320px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color:  rgba(63, 113, 243, 0.76)n;
+        width: 100%;
+        
+    }
+
+    .texto{
+        font-size: 15px;
+        margin: 0 auto;
+        margin-top:100px;
+    }
+}
